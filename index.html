@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe - Modern UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+    <div class="mode-toggle">
+  <label class="switch">
+    <input type="checkbox" id="modeSwitch" checked>
+    <span class="slider round"></span>
+  </label>
+  <span class="mode-label">Disappearing Mode: <strong id="modeStatus">ON</strong></span>
+</div>
+
+    <div id="status" class="status">Next Player: X</div>
+    <div class="board" id="board"></div>
+    <button id="reset" class="reset-btn">🔄 Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
