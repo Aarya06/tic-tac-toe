@@ -42,7 +42,7 @@ function handleClick(index) {
   }
 
   // Remove a random symbol ONLY if mode is ON and 6+ symbols placed
-  if (disappearingMode && board.filter(Boolean).length >= 6) {
+  if (disappearingMode && board.filter(Boolean).length >= 8) {
     const nextPlayer = xIsNext ? "O" : "X";
     removeRandomSymbol(nextPlayer);
   }
